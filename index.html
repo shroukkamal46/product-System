@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</html>
+<head>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+</head>
+<body>
+    <div class="bg-info w-75 m-auto p-5">
+
+        <label for="productId">ID</label>
+        <input id="productId" type="text" class="form-control">
+
+        <label for="productName">Product name</label>
+        <input id="productName" type="text" class="form-control">
+
+        <label for="productPrice">Product price</label>
+        <input id="productPrice" type="number" class="form-control">
+
+        <label for="productDesc">Product Description</label>
+        <textarea id="productDesc" class="form-control"></textarea>
+
+        <label for="productRate">Rate</label>
+        <input type="number" id="productRate" min="1" max="5" required  class="form-control">
+
+        <label for="productQuantity">Product Quantity</label>
+        <input id="productQuantity" type="text" class="form-control">
+
+
+
+
+        <button class="btn btn-primary float-end my-3" id="addBtn">add product</button>
+
+        <table class="table">
+          <thead>
+            <th>ID</th>
+            <th>name</th>
+            <th>price</th>
+            <th>description</th>
+            <th>Rate</th>
+            <th>Quantity</th>
+            <th>Update</th>
+            <th>Delete</th>
+            </thead>
+          <tbody id="tableBody">
+            <tr>
+              <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button class="btn btn-danger" >Update</button></td>
+            <td><button class="btn btn-info">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+
+      <!-- <button class="btn btn-primary float-end my-3">Get Product</button> 
+        <button class="btn btn-primary float-end my-3">Update Product</button>
+        <button class="btn btn-primary float-end my-3">Delete Product</button> -->
+
+      </div>
+<script src="Bootstrap/bootstrap.bundle.min.js"></script>
+   <script src="script.js"></script>
+  
+</body>
+</html>
